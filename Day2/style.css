@@ -1,0 +1,166 @@
+body {
+    /* display: flex; */
+    align-items: center;
+    align-content: center;
+}
+
+.square {
+    position: relative;
+    /* left: 150px; */ 
+    height: 500px;
+    width: 500px;
+    margin: 0 auto;
+    background: rgb(4, 39, 68);
+    transition: background ease;
+    animation: animation1 2000ms 2000ms infinite ;
+}
+
+ @keyframes animation1 {
+     50% {
+         background: rgb(34, 92, 139);
+     }
+
+     100% {
+         background: rgb(104, 177, 236);
+     }
+     
+ }
+
+.moon {
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    background:yellow ;
+   
+    position: absolute;
+    box-shadow: 0 0 50px white;
+    top: 150px;
+    left: 550px;
+    transition: background ease;
+    animation: moon_animation 2000ms 2000ms infinite  ;
+}
+
+ @keyframes moon_animation {
+    50% {
+        top: 50px;
+        left: 700px;
+        background: -moz-radial-gradient(yellow, white);
+    }
+    
+
+    100% {
+        top: 150px;
+        left: 900px;
+        background: white;
+    }
+     
+ }
+
+
+ .earth {
+     width: 500px;
+     height: 75px;
+     position: absolute;
+     top: 440px;
+     margin-left: 510px;
+
+     border-radius: 50% 10% 10% 10%;
+     background: -moz-linear-gradient(rgb(22, 0, 0), rgba(12, 5, 0, 0.925));
+     transition: background ease;
+     animation: animation2 2000ms 2000ms infinite  ;
+ }
+ @keyframes animation2 {
+     50% {
+        background: -moz-linear-gradient(rgb(43, 2, 2), rgba(53, 23, 2, 0.925));
+     }
+
+     100% {
+        background: -moz-linear-gradient(rgb(29, 5, 5), rgba(121, 58, 13, 0.925));
+     }
+     
+ }
+
+
+.stars {
+    width: 2px;
+    height: 2px;
+    position: absolute;
+    background: white;
+    border-radius: 100%;
+    margin-left: 555px;
+    box-shadow: 0 0 5px white;
+    animation: animation3 2000ms 2000ms infinite ;
+}
+
+  @keyframes animation3 {
+      50% {
+          width: 1px;
+          height: 1px;
+      }
+      100% {
+          background: rgb(104, 177, 236);
+          box-shadow: none;
+      }
+      
+  }
+
+#star1 {
+    top: 110px;
+    left: 110px;
+}
+
+#star2 {
+    top: 88px;
+    left: 379px;
+}
+
+#star3 {
+    top: 200px;
+    left: 98x;
+}
+
+#star4 {
+    top: 120px;
+    left: 125px;
+}
+#star5 {
+    top: 300px;
+    left: 140px;
+}
+#star6 {
+    top: 250px;
+    left: 110px;
+}
+#star7 {
+    top: 190px;
+    left: 400px;
+}
+
+#star8 {
+    top: 240px;
+    left: 250px;
+}
+#star9 {
+    top: 210px;
+    left: 347px;
+}
+#star10 {
+    top: 259px;
+    left: 300px;
+}
+#star11 {
+    top: 69px;
+    left: 285px;
+}
+#star12 {
+    top: 150px;
+    left: 259px;
+}
+#star13 {
+    top: 189px;
+    left: 320px;
+}
+#star14 {
+    top: 159px;
+    left: 100px;
+}
