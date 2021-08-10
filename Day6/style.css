@@ -1,0 +1,98 @@
+html, html::after, html::before {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.card {
+    width: 400px;
+}
+
+.content {
+    position: relative;
+    text-align: center;
+    padding: 15em 5em;
+    transition: transform 2s;
+    transform-style: preserve-3d;
+}
+
+.card:hover .content {
+    transform: rotateY(.5turn);
+}
+
+.front ,.back {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 1em 3em;
+    display: grid;
+    align-content: center;
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+}
+
+.front {
+    background-color:#b7c9e5;
+    background-image: url("fly2.jpg");
+    background-size: cover;
+    background-blend-mode: overlay;
+    color: #333;
+
+}
+
+.front::before {
+    content: '';
+    position: absolute;
+    top: 1em;
+    left: 1em;
+    bottom: 1em;
+    right: 1em;
+    border: 2px solid #333;
+    transform: translateZ(2em);
+}
+
+.title {
+    font-size: 3.5em;
+    text-transform: uppercase;
+    transform: translateZ(5em);
+}
+
+.subtitle {
+    font-size: 1em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transform: translateZ(4em);
+    opacity: 0.8;
+}
+.back_body {
+    transform: translateZ(4em);
+    font-size: 1.75em;
+    line-height: 1.5;
+}
+
+.back {
+    transform: rotateY(.5turn);
+    color:white;
+    background: rgb(52, 128, 128);
+}
+
+
+.back::before {
+    content: '';
+    position: absolute;
+    --spacer: 1em;
+    top: var(--spacer);
+    bottom: var(--spacer);
+    left: var(--spacer);
+    right: var(--spacer);
+    border: 3px solid white;
+    transform: var(--level-one);
+  }
