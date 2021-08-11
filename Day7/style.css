@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.accordian {
+    
+    margin: 60px auto;
+    width: 80%;
+    height: 368px;
+    overflow: hidden;  
+    /* border: 2px solid black; */
+}
+
+.accordian ul {
+    list-style: none;
+    cursor: pointer;
+}
+
+.accordian ul li {
+    width: calc(100% / 6);
+    position: relative;
+    float: left;
+    box-shadow: 0 0 20px black;
+    transition: all .5s;
+}
+
+.accordian ul:hover li {
+    width: calc((100% -552px ) / 5);
+}
+.accordian ul li:hover {
+    width: 552px;
+}
+
+.accordian ul li a {
+    text-decoration: none;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 3px 6px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-size: 20px;
+}
+
